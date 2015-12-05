@@ -1,3 +1,3 @@
-# Atom: Password Generator package
+# Password Generator
 
-Atom package for password generating.
+Password generator for Atom
