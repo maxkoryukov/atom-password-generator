@@ -1,0 +1,20 @@
+{
+  "name": "atom-password-generator",
+  "main": "./lib/atom-password-generator",
+  "version": "0.0.1",
+  "description": "Password generator",
+  "keywords": [
+      "password",
+      "generator"
+  ],
+  "activationCommands": {
+    "atom-workspace": "atom-password-generator:toggle"
+  },
+  "repository": "https://github.com/maxkoryukov/atom-password-generator",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
