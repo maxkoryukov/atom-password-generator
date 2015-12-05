@@ -49,7 +49,7 @@ describe "AtomPasswordGenerator", ->
 
       # This is an activation event, triggering it causes the package to be
       # activated.
-      atom.commands.dispatch workspaceElement, 'atom-password-generator:toggle'
+      atom.commands.dispatch workspaceElement, 'atom-password-generator:short'
 
       waitsForPromise ->
         activationPromise

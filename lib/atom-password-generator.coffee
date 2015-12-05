@@ -1,28 +1,17 @@
-AtomPasswordGeneratorView = require './atom-password-generator-view'
 {CompositeDisposable} = require 'atom'
 
 module.exports = AtomPasswordGenerator =
-  atomPasswordGeneratorView: null
-  modalPanel: null
   subscriptions: null
 
   activate: (state) ->
-    @atomPasswordGeneratorView = new AtomPasswordGeneratorView(state.atomPasswordGeneratorViewState)
-    @modalPanel = atom.workspace.addModalPanel(item: @atomPasswordGeneratorView.getElement(), visible: false)
-
-    # Events subscribed to in atom's system can be easily cleaned up with a CompositeDisposable
     @subscriptions = new CompositeDisposable
-
-    # Register command that toggles this view
-    @subscriptions.add atom.commands.add 'atom-workspace', 'atom-password-generator:toggle': => @toggle()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'password-generator:short': => @short()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'password-generator:long': => @long()
 
   deactivate: ->
-    @modalPanel.destroy()
     @subscriptions.dispose()
-    @atomPasswordGeneratorView.destroy()
 
   serialize: ->
-    atomPasswordGeneratorViewState: @atomPasswordGeneratorView.serialize()
 
   short: ->
     s = ''
