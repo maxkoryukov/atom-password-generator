@@ -1,7 +1,7 @@
 {
   "name": "password-generator",
   "main": "./lib/password-generator",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Password generator for Atom",
   "keywords": [
     "password",
