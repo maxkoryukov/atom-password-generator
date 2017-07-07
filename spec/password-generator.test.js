@@ -9,7 +9,7 @@ describe('AtomPasswordGenerator', function() {
 	beforeEach(function() {
 
 		return atom.packages.activatePackage('atom-password-generator')
-			.then(pkg => {
+			.then(_unused_pkg => {
 				editor = atom.workspace.buildTextEditor()
 				workspaceElement = atom.views.getView(atom.workspace)
 			})
