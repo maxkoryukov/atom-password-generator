@@ -7,7 +7,13 @@ This is the history of changes of the `hubot-vk` package
 
 ## unreleased // ???
 
-* (1ef9ab6) Configurable length and chars for passwords
+* (github #3) Configurable length and chars for passwords (by [giovazz89](https://github.com/giovazz89))
+* (188af71) add medium-length  password
+
+Under the hood:
+
+* A lot of refactoring
+* enable eslint analysis
 
 ## 0.2 // 2016-04-04
 
