@@ -7,6 +7,8 @@ This is the history of changes of the `hubot-vk` package
 
 ## unreleased // ???
 
+## 0.3.0 // 2017-07-08
+
 * (github #3) Configurable length and chars for passwords (by [giovazz89](https://github.com/giovazz89))
 * (188af71) add medium-length  password
 
