@@ -1,6 +1,6 @@
 {
   "name": "atom-password-generator",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Password generator for Atom",
   "main": "./lib/password-generator",
   "repository": "https://github.com/maxkoryukov/atom-password-generator",
