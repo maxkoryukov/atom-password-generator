@@ -7,10 +7,11 @@ This is the history of changes of the `atom-password-generator` package
 
 ## unreleased // ???
 
-## 0.4.0 // 2017-11-28
+## 0.4.1 // 2017-11-28
 
 * (gh #4) Usage of human-confusing chars is a configurable option
 * Check that set of available chars is not empty
+* Upgrade dev-dependencies
 
 * (gh #6) FIXED: notify if the activeTextEditor was not found
 
