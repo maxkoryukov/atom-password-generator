@@ -1,4 +1,2 @@
-# AUTHORS
-
-Maksim Koryukov // https://github.com/maxkoryukov
+Maksim Koryukov <maxkoryukov@gmail.com>
 Giovazz89 <giovazz89@gmail.com>
