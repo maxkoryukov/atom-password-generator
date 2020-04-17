@@ -2,43 +2,55 @@
   "name": "atom-password-generator",
   "version": "0.4.2",
   "description": "Password generator for Atom",
-  "main": "./lib/password-generator",
-  "repository": "https://github.com/maxkoryukov/atom-password-generator",
-  "keywords": [
-    "atom",
-    "password",
-    "generator"
-  ],
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "author": {
-    "name": "Maksim Koryukov",
-    "url": "https://github.com/maxkoryukov"
+    "name": "volebo",
+    "url": "http://volebo.net"
   },
   "contributors": [
     {
       "name": "Maksim Koryukov",
-      "url": "https://github.com/maxkoryukov"
+      "email": "maxkoryukov@volebo.net",
+      "url": "https://www.npmjs.com/~maxkoryukov"
     },
     {
       "name": "Giovazz89",
       "email": "giovazz89@gmail.com"
     }
   ],
-  "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxkoryukov/atom-password-generator.git"
   },
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/maxkoryukov/atom-password-generator/issues"
   },
   "homepage": "https://github.com/maxkoryukov/atom-password-generator",
+  "keywords": [
+    "atom",
+    "password",
+    "generator"
+  ],
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "main": "./lib/password-generator",
   "activationCommands": {},
   "atomTestRunner": "atom-mocha-test-runner",
   "dependencies": {},
   "devDependencies": {
     "atom-mocha-test-runner": "^1.2.0",
-    "chai": "^4.1.2",
-    "eslint": "^4.12.0",
+    "@volebo/mocha-helpers": "^0.1.0",
     "eslint-config-volebo": "^2.3.3",
-    "mocha": "^4.0.1"
+    "chai": "^4.1.2",
+    "eslint": "^6.7.2",
+    "eslint-config-volebo": "^2.3.3",
+    "nyc": "^14.1.1",
+    "mocha": "^6.2.0",
+    "mocha-tags": "^1.0.1"
   }
 }

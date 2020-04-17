@@ -9,10 +9,10 @@
 #                                                                              #
 ################################################################################
 #
-# Editor config for atom-password-generator
+# Password generator for Atom
 #
-# Copyright (C) 2016-2017 Volebo <dev@volebo.net>
-# Copyright (C) 2016-2017 Maksim Koryukov <maxkoryukov@gmail.com>
+# Copyright (C) 2016-2020 Volebo <dev@volebo.net>
+# Copyright (C) 2016-2020 Maksim Koryukov <maxkoryukov@gmail.com>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the MIT License, attached to this software package.
@@ -26,6 +26,9 @@
 #
 # http://spdx.org/licenses/MIT
 #
+################################################################################
+
+
 # This file is for unifying the coding style for different editors and IDEs
 # editorconfig.org
 root = true
@@ -38,14 +41,14 @@ insert_final_newline = true
 indent_style = tab
 indent_size = 4
 
+# No TABS in YAML. Use 2 spaces
+[*.{yml, yaml}]
+indent_style = space
+indent_size = 2
+
 [*.json]
 indent_style = tab
 indent_size = 4
-
-# Troubles with TABS. Use 2 spaces
-[*.yml]
-indent_style = space
-indent_size = 2
 
 [*.hbs]
 insert_final_newline = false
