@@ -39,6 +39,14 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "main": "./lib/password-generator",
+  "scripts": {
+    "test": "`npm bin`/mocha",
+    "test:tag:fast": "`npm bin`/mocha --tags 'is:fast'",
+
+    "lint": "`npm bin`/eslint ./",
+    "coverage": "`npm bin`/nyc `npm bin`/mocha",
+    "coverage:report": "`npm bin`/nyc report"
+  },
   "activationCommands": {},
   "atomTestRunner": "atom-mocha-test-runner",
   "dependencies": {},
