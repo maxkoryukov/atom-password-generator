@@ -1,6 +1,6 @@
 {
   "name": "atom-password-generator",
-  "version": "0.4.2",
+  "version": "0.5.0",
   "description": "Password generator for Atom",
   "license": "MIT",
   "private": false,
