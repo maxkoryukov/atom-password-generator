@@ -63,9 +63,11 @@ dist: trusty
 
 ### Generic setup follows ###
 script:
-  - curl -s -O https://raw.githubusercontent.com/atom/ci/master/build-package.sh
-  - chmod u+x build-package.sh
-  - ./build-package.sh
+  - npm run lint
+  # https://github.com/maxkoryukov/atom-password-generator/issues/5
+  # TODO: I am too stupid for writing Atom tests
+  - curl -s https://raw.githubusercontent.com/atom/ci/master/build-package.sh | sh
+  # - "${ATOM_SCRIPT_PATH}" --test ./lib/**/*.test.js
 
 branches:
   only:

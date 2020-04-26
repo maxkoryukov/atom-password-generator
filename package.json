@@ -41,18 +41,20 @@
   "main": "./lib/password-generator",
   "scripts": {
     "test": "`npm bin`/mocha",
+    "test:atom": "atom --test ./lib/**/*.test.js",
     "test:tag:fast": "`npm bin`/mocha --tags 'is:fast'",
     "lint": "`npm bin`/eslint ./",
     "coverage": "`npm bin`/nyc `npm bin`/mocha",
     "coverage:report": "`npm bin`/nyc report"
   },
   "activationCommands": {},
-  "atomTestRunner": "atom-mocha-test-runner",
+  "atomTestRunner": "./tests/runner.js",
+  "atomTestRunner___": "@atom/mocha-test-runner",
   "dependencies": {},
   "devDependencies___": {},
   "devDependencies": {
+    "@atom/mocha-test-runner": "^1.6.0",
     "@volebo/mocha-helpers": "^0.1.0",
-    "atom-mocha-test-runner": "^1.2.0",
     "chai": "^4.2.0",
     "eslint": "^6.8.0",
     "eslint-config-volebo": "^2.3.3",

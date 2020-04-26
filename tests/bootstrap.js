@@ -32,24 +32,11 @@
 
 'use strict'
 
-module.exports = {
-	reporter: 'list',
-	// reporter: 'spec',
+const chai            = require('chai')
+const tags            = require('mocha-tags')
+const mh              = require('@volebo/mocha-helpers')
 
-	recursive: true,
-	checkLeaks: true,
-	ui: 'bdd',
-	require: 'tests/bootstrap',
-	extension: ['test.js'],
+global.expect = chai.expect
+global.tags = tags
 
-	diff: true,
-	//opts: './test/mocha.opts',
-	package: './package.json',
-	slow: 75,
-	timeout: 2000,
-
-	spec: [
-		'lib/**/*.test.js',
-		// 'lib/**/*.spec.js',
-	]
-}
+global.filename2suitename = mh.filename2suitename
