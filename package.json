@@ -42,7 +42,6 @@
   "scripts": {
     "test": "`npm bin`/mocha",
     "test:tag:fast": "`npm bin`/mocha --tags 'is:fast'",
-
     "lint": "`npm bin`/eslint ./",
     "coverage": "`npm bin`/nyc `npm bin`/mocha",
     "coverage:report": "`npm bin`/nyc report"
@@ -50,15 +49,15 @@
   "activationCommands": {},
   "atomTestRunner": "atom-mocha-test-runner",
   "dependencies": {},
+  "devDependencies___": {},
   "devDependencies": {
-    "atom-mocha-test-runner": "^1.2.0",
     "@volebo/mocha-helpers": "^0.1.0",
+    "atom-mocha-test-runner": "^1.2.0",
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
     "eslint-config-volebo": "^2.3.3",
-    "chai": "^4.1.2",
-    "eslint": "^6.7.2",
-    "eslint-config-volebo": "^2.3.3",
-    "nyc": "^14.1.1",
-    "mocha": "^6.2.0",
-    "mocha-tags": "^1.0.1"
+    "mocha": "^7.1.2",
+    "mocha-tags": "^1.0.1",
+    "nyc": "^15.0.1"
   }
 }
