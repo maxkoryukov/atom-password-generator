@@ -30,6 +30,10 @@
 > ### Fixed
 > ### Removed
 
+## 0.5.0 // 2020-04-26
+
+- update dependencies
+
 ## 0.4.1 // 2017-11-28
 
 * (gh #4) Usage of human-confusing chars is a configurable option
