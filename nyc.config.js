@@ -30,13 +30,13 @@
 ################################################################################
 */
 
-// 'use strict'
+'use strict'
 
 module.exports = {
 	'all': true,
 
-// "sourceMap": false,
-// "instrument": false,
+	// "sourceMap": false,
+	// "instrument": false,
 
 	'reporter': [
 		'html',
